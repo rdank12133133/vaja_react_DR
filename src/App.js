@@ -1,10 +1,16 @@
 import logo from './source_files/logo.svg';
 import './App.css';
+import {useState} from 'react';
 function Nekaj(){
-  return(<>
-    <div>NNNNNAJJJJJAICII</div>
-    <p>XXXXXDSSDSDSDSDS</p></>
-  )
+  const [tekst,setTekst]=useState("originalni tekst")
+  return(
+    <>
+    <div id='neke'>Tekst v Nekaj Funkciji</div>
+    <p>nekaj nove</p>
+    <button onClick={(e)=>(setTekst("tekst po klIKU"))}>klikni</button>
+    <span>{tekst}</span>
+    </>
+  );
 }
 
 function App() {
@@ -23,7 +29,6 @@ function App() {
         >
           Learn React
         </a>
-        <p>LI E 2 MOY FAAJJAJJCJEJEJJCJEJCJEJCEJEJ</p>
         <Nekaj/>
       </header>
     </div>
