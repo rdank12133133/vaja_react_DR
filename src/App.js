@@ -1,17 +1,9 @@
 import logo from './source_files/logo.svg';
 import './App.css';
+import Neke from './fragment1/Neke.jsx';
+import Frag from './fragment12/Frag.jsx';
 import {useState} from 'react';
-function Nekaj(){
-  const [tekst,setTekst]=useState("originalni tekst")
-  return(
-    <>
-    <div id='neke'>Tekst v Nekaj Funkciji</div>
-    <p>nekaj nove</p>
-    <button onClick={(e)=>(setTekst("tekst po klIKU"))}>klikni</button>
-    <span>{tekst}</span>
-    </>
-  );
-}
+
 
 function App() {
   return (
@@ -29,7 +21,8 @@ function App() {
         >
           Learn React
         </a>
-        <Nekaj/>
+        <Neke></Neke>
+        <Frag></Frag>
       </header>
     </div>
   );
